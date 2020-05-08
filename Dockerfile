@@ -1,11 +1,15 @@
-FROM maven:3.6.3-jdk-11 as builder
-WORKDIR /build
-COPY pom.xml .
+FROM ubuntu as builder
 
-COPY src/ /build/src/
+RUN apt-get update
+RUN apt-get install -y maven
+
+RUN apt-get install -y git
+RUN git clone https://github.com/RohithYogi/MavenTestProject
+WORKDIR MavenTestProject
+
 RUN mvn install
 
 FROM openjdk:11-jre
 
-COPY --from=builder /build/target/Calculator-1.0-SNAPSHOT.jar /app/my-app.jar
-CMD java -cp /app/my-app.jar com/calculator/Calculator
+COPY --from=builder /MavenTestProject/target/Calculator-1.0-SNAPSHOT.jar /calculator/Calculator-1.0-SNAPSHOT.jar
+CMD java -cp /calculator/Calculator-1.0-SNAPSHOT.jar com.calculator.Calculator
