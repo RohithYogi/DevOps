@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Cloning - Git'){
       steps{
-        git 'https://github.com/RohithYogi/MavenTestProject.git'
+        git 'https://github.com/RohithYogi/DevOps.git'
       }
     }
     stage('CI - Maven') {
