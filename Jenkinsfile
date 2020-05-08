@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Cloning - Git'){
       steps{
-        git 'https://github.com/RohithYogi/DevOps.git'
+        git 'https://github.com/RohithYogi/MavenTestProject.git'
       }
     }
     stage('CI - Maven') {
@@ -68,7 +68,7 @@ pipeline {
           options: """
             BUILD_VERSION=$BUILD_NUMBER
           """,
-          jobId: "38084a7b-de6d-4fb6-b3b3-aafa8e6587ba"])
+          jobId: "83d9ec96-9797-4bf8-ba37-e3e0573f3d75"])
         }
       }
     }

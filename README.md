@@ -1,11 +1,9 @@
-# Calculator
-This a test project for DevOps ToolChain.
+# MavenTestProject - Calculator
+This a test project for maven.
 
-This project is to create a basic calculator program with operations such addition, subtraction, multiplication and division, adding each functionality incrementally.
+A basic calculator program with operations such addition, subtraction, multiplication and division, adding each functionality incrementally.
 
-By using DevOps tools to create a pipeline. 
+Using DevOps tools to create a pipeline. Following these instructions the same result can be replicated also add screenshots of outcomes and configurations, along with the links of your GitHub, Docker Hub etc.
 
-Tools Used for Pipeline:
+Suggested Tools for Pipeline:
 Git, Jenkins, Maven, JUnit, Docker, Chef, Rundeck, ELK.
-
-A detailed report is also included
