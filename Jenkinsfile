@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "imt2016072/calculator"
+    registry = "imt2016072/devops"
     registryCredential = 'dockerhub'
     dockerImage = ''
     dockerImageLatest = ''
