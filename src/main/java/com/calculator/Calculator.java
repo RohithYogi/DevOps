@@ -12,7 +12,7 @@ public class Calculator {
 
 		while(true) {
 			System.out.println("Select an option:");
-			System.out.println("\t1 - Addition\n\t2 - Subtraction\n\t3 - Multiplication\n\t4 - Division\n\t0 - Exit");
+			System.out.println("|\t1 - Addition\t|\n||\t2 - Subtraction\t|\n||\t3 - Multiplication\t|\n||\t4 - Division\t|\n||\t0 - Exit\t|\n");
 			System.out.println("Select an option:");
 			int option = 0;
 			if(in.hasNext()) option = in.nextInt();
