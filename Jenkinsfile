@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "imt2016072/calculator"
+    registry = "imt2016072/devops"
     registryCredential = 'dockerhub'
     dockerImage = ''
     dockerImageLatest = ''
@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Cloning - Git'){
       steps{
-        git 'https://github.com/RohithYogi/MavenTestProject.git'
+        git 'https://github.com/RohithYogi/DevOps.git'
       }
     }
     stage('CI - Maven') {
