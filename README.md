@@ -1,5 +1,5 @@
-# MavenTestProject - Calculator
-This a test project for maven.
+# DevOps Toolchain - Calculator
+This a test project.
 
 A basic calculator program with operations such addition, subtraction, multiplication and division, adding each functionality incrementally.
 
